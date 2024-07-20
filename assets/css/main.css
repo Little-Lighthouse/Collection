@@ -1,0 +1,19 @@
+/* ---- ELEMENTS ---- */
+body{margin:0;padding:0;box-sizing:border-box;min-height:100vh;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;background-color: #dd8324 !important;}
+header{background-color:#011723 !important;padding:3px;}
+nav{opacity:0.95;}
+footer{background-color:#6B1111 !important;}
+
+
+/* ---- CLASSES ---- */
+.navbar{background-color:#6B1111 !important;}
+.nav-link{color:#fff !important;}
+.active{background-color:#090652 !important;border-radius:10px;}
+
+.postDiv{width:40vw;min-width:290px;height:fit-content; border-radius:12px;background-color: #93692F;box-shadow:17px 13px 20px 4px #000;}
+
+select#topicTypeEarlier, select#topicTypeCurrent{width:fit-content;height:fit-content;}
+
+.card{max-width:200px !important;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;opacity:0.9;background-color: #93692F !important;}
+.card-body{color:#fff !important;}
+.sectDivider{border: 2.5px dashed #fff; opacity: 0.6;}
