@@ -1,0 +1,48 @@
+/* ---- ELEMENTS ---- */
+body{margin:0;padding:0;box-sizing:border-box;min-height:100vh;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;background-color: #fff2c5 !important;}
+nav{opacity:0.95;}
+footer{background-color:#10b6b4 !important;}
+
+
+/* ---- CLASSES ---- */
+.navbar{background-color:#10b6b4 !important;}
+.nav-link{color:#13376B !important;}
+.active{background-color:#fed52b !important;border-radius:10px;}
+
+select#Language, select#topicType{width:fit-content;height:fit-content;}
+
+.card{max-width:200px !important;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;opacity:0.9;background-color: #13376B !important;}
+.card-body{color:#fff !important;}
+.sectDivider{border: 2.5px dashed #13376B; opacity: 0.6;}
+
+.img-container{display: flex;justify-content: center;margin-top: 15px;}
+.img-container img{width: 50vw;border-radius: 20px;box-shadow: 0 17px 6px -6px rgba(0, 0, 0, 0.9);}
+
+.logInContainer .imgAndForm{display: flex;justify-content: center;}
+.logInContainer{width: 85vw !important;border-radius: 20px;box-shadow: 17px 13px 20px 4px #000;margin: 75px;padding: 10px;color: #13376B;border: 1px solid #000;}
+.logInContainer .imgBoxLogin{width: 25vw;padding: 5px;border-radius: 20px;margin: 10px;}
+.logInContainer .loginBox{padding: 5px; margin: 10px;}
+.logInContainer .loginBox .btn{background-color: #13376B !important;color: #fff !important; width: 100px;}
+.logInContainer .loginBox .inputText{border: 0.3 solid #13376B;border-radius: 20px;padding: 3px 17px;}
+
+
+@media screen and (max-width: 745px){
+    .logInContainer .imgAndForm{display: block;align-items: center;text-align: center;}
+    .logInContainer .imgBoxLogin{width: 38vw;}
+    .logInContainer .loginBox .btn{margin-top: 0 !important;}
+}
+
+@media screen and (max-width: 430px){
+    .img-container{margin-top: 0px;}
+    .img-container img{width: 100vw;border-radius: 0px;box-shadow: none;}
+}
+
+/* ---- SECTIONS ---- */
+section#timeline{
+    width: fit-content;
+    color:#fff !important;
+    opacity:0.9;
+    border-radius:14px;
+    box-shadow:17px 13px 20px 4px #000;
+    background-color:#13376B;
+}
