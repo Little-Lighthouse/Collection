@@ -1,0 +1,48 @@
+/* ---- ELEMENTS ---- */
+body{margin:0;padding:0;box-sizing:border-box;min-height:100vh;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;background-color: #fff2c5 !important;}
+footer{background-color:#10b6b4 !important;}
+
+
+.mainContainer{
+    width: 40vw;
+    margin: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #13376B;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 17px 13px 20px 4px #000;
+}
+
+.mainContainer .header{
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+.mainContainer .header img{
+    width: 140px;
+    height: fit-content;
+    margin: 7px;
+}
+.mainContainer .header .infoBox{
+    margin: 7px;
+}
+
+.mainContainer  .btnGp{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    border-bottom: 1px solid #000;
+}
+.mainContainer .btnGp .btn{
+    display: block;
+    border-radius: 12px;
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color:#fed52b !important;
+    color: #13376B !important;
+    box-shadow: 3px 4px 10px 5px #000;
+}
