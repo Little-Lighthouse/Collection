@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,30 +16,129 @@
         <title>User Account</title>
     </head>
     <body>
+        <nav class="navbar navbar-expand-sm sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png" alt="Logo" style="width:40px;" class="rounded-pill"></a>
+            </div>
+        </nav>
+
         <div class="mainContainer mt-5">
             <div class="header">
                 <img src="QR_Code.png" alt="QR Code">
                 <div class="infoBox">
                     <p>Name : <span id="name"></span></p>
                     <p>Department : <span id="dept"></span></p>
-                    <p>Term : <span id="term"></span></p>
-                    <p>Status : <span id="status"></span></p>
                 </div>
             </div>
 
             <div class="btnGp">
-                <button class="btn">Certificate</button>
-                <button class="btn">Transcript</button>
-                <button class="btn">Report</button>
-                <button class="btn">N/A</button>
-                <button class="btn">N/A</button>
-                <button class="btn">N/A</button>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#detailModal"><i class="bi bi-info-square-fill"></i><br>Details</button>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#certificateModal"><i class="bi bi-award-fill"></i><br> Certificate</button>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#feedbackModal"><i class="bi bi-pencil-square"></i><br> Feedback</button>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#reportModal"><i class="bi bi-file-post-fill"></i><br> Report</button>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#NA_Modal"><i class="bi bi-x-octagon-fill"></i><br> N/A</button>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#NA_Modal"><i class="bi bi-x-octagon-fill"></i><br> N/A</button>
             </div>
 
-            <button class="btn bg-danger my-3 m-auto d-block" onclick="signOut()">Sign Out</button>
+            <button class="btn bg-danger text-white my-3 m-auto d-block" onclick="signOut()">Sign Out</button>
+        </div>
+        
+        <div class="modal fade" id="detailModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 class="modal-title"><i class="bi bi-info-square-fill"></i> Details</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p class="m-0">Name : <span id="nameM"></span></p>
+                        <p class="m-0">Department : <span id="deptM"></span></p>
+                        <p class="m-0">Position : <span id="position"></span></p>
+                        <p class="m-0">Term : <span id="term"></span></p>
+                        <p class="m-0">Status : <span id="status"></span></p>
+                    </div>
+        
+                    <div class="modal-footer"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="modal fade" id="certificateModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 class="modal-title"><i class="bi bi-award-fill"></i> Certificate</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body d-flex justify-content-center">
+                        <a class="btn text-white" style="background-color: #13376B;" href="../data/Sample Certificate.jpg" download="Sample Certificate"><i class="bi bi-download"></i> Download Certificate</a>
+                    </div>
+        
+                    <div class="modal-footer"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="modal fade" id="feedbackModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 class="modal-title"><i class="bi bi-pencil-square"></i> Feedback</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body d-flex justify-content-center">
+                        <a class="btn text-white" style="background-color: #13376B;" href="../data/Sample Feedback File.pdf" download="Sample Feedback"><i class="bi bi-download"></i> Download Feedback</a>
+                    </div>
+        
+                    <div class="modal-footer"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="modal fade" id="reportModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 class="modal-title"><i class="bi bi-file-post-fill"></i> Report</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Currently not available</p>
+                    </div>
+        
+                    <div class="modal-footer"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="modal fade" id="NA_Modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+        
+                    <div class="modal-header">
+                        <h4 class="modal-title"><i class="bi bi-x-octagon-fill"></i> N/A</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Coming soon. Stay tuned!</p>
+                    </div>
+        
+                    <div class="modal-footer"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
+                </div>
+            </div> 
         </div>
 
-        <footer class="mt-5 fixed-bottom">
+
+        <footer class="mt-5">
             <p class="text-center text-white p-1 m-0">© 2023 Little Lighthouse - All rights reserved.</p><hr class="m-1 text-light">
         </footer>
 

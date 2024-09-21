@@ -3,25 +3,29 @@ body{margin:0;padding:0;box-sizing:border-box;min-height:100vh;font-family: 'Fra
 footer{background-color:#10b6b4 !important;}
 
 
+.navbar{background-color:#10b6b4 !important;}
+
 .mainContainer{
-    width: 40vw;
+    width: 36vw;
     margin: 20px;
     margin: 0 auto;
     padding: 10px;
     background-color: #13376B;
-    color: #fff;
     border-radius: 20px;
     box-shadow: 17px 13px 20px 4px #000;
 }
 
 .mainContainer .header{
+    color: #fff;
     border-bottom: 1px solid #000;
     display: flex;
     justify-content: center;
 }
 .mainContainer .header img{
-    width: 140px;
-    height: fit-content;
+    min-width: 20px;
+    min-height: fit-content;
+    max-width: 140px;
+    max-height: 140px;
     margin: 7px;
 }
 .mainContainer .header .infoBox{
@@ -45,4 +49,16 @@ footer{background-color:#10b6b4 !important;}
     background-color:#fed52b !important;
     color: #13376B !important;
     box-shadow: 3px 4px 10px 5px #000;
+}
+
+
+@media screen and (max-width: 830px){
+    .mainContainer{
+        width: 60vw;
+    }
+}
+@media screen and (max-width: 550px){
+    .mainContainer{
+        width: 85vw;
+    }
 }
