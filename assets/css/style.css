@@ -6,7 +6,7 @@ footer{background-color:#10b6b4 !important;}
 
 /* ---- CLASSES ---- */
 .navbar{background-color:#10b6b4 !important;}
-.nav-link{color:#13376B !important;}
+.nav-link{color:#13376B !important;padding: 8px 7px !important;margin: 3px;}
 .active{background-color:#fed52b !important;border-radius:10px;}
 
 select#Language, select#topicType{width:fit-content;height:fit-content;}

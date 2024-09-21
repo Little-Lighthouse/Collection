@@ -20,12 +20,12 @@ footer{background-color:#10b6b4 !important;}
     border-bottom: 1px solid #000;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .mainContainer .header img{
-    min-width: 20px;
-    min-height: fit-content;
-    max-width: 140px;
-    max-height: 140px;
+    width: 120px;
+    height: 120px;
     margin: 7px;
 }
 .mainContainer .header .infoBox{
